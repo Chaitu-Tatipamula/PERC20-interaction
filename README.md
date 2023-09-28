@@ -9,9 +9,7 @@ Contract developers should avoid adding sensitive information to logs, such as t
 
 Also, you should be careful with public view functions that can also leak some sensitive information, for example, user balance. In the example, we're using a msg.sender check to verify if the caller is the wallet owner. If this function was called from EOA (Externally Owned Account), EVM will try to recover msg.sender from provided signature within eth_call
 
-# Sample Hardhat Project
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
 
 Try running some of the following tasks:
 
